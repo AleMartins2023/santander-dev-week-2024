@@ -5,23 +5,23 @@ Java RESTful API criada para a Santander Dev Week 2024
 
 Criação e Versionamento da API
 
-    Spring Initializr e GitHub
+- Spring Initializr e GitHub
 
 Abstração e Modelagem do Domínio
 
-    Figma, chatGPT (Mermand) e JPA
+- Figma, chatGPT (Mermand) e JPA
 
 Implementação do Backend
 
-    Spring Boot e Java 21
+- Spring Boot e Java 21
 
 Deploy e Monitoramento
 
-    Railway (PostgreSQL e CI/CD da API)
+- Railway (PostgreSQL e CI/CD da API)
 
 Desafio: Crie Sua Própria API
 
-    Explore um Novo Domínio de Aplicação a Sua Escolha
+- Explore um Novo Domínio de Aplicação a Sua Escolha
 
 ## Criação e Importação do Projeto
 
