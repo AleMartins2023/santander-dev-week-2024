@@ -3,63 +3,61 @@ Java RESTful API criada para a Santander Dev Week 2024
 
 ## Etapas:  
 
-Criação e Versionamento da API
+**Criação e Versionamento da API**
 
 - Spring Initializr e GitHub
 
-Abstração e Modelagem do Domínio
+**Abstração e Modelagem do Domínio**
 
-- Figma, chatGPT (Mermand) e JPA
+- Figma, chatGPT (Mermaid) e JPA
 
-    Diagrama de classes do projeto
+Diagrama de classes do projeto
 
-        classDiagram
-    class User {
-        -String name
-        -Account account
-        -Feature[] features
-        -Card card
-        -News[] news
-    }
+```mermaid
+classDiagram
+  class User {
+    -String name
+    -Account account
+    -Feature[] features
+    -Card card
+    -News[] news
+  }
 
-    class Account {
-        -String number
-        -String agency
-        -Number balance
-        -Number limit
-    }
+  class Account {
+    -String number
+    -String agency
+    -Number balance
+    -Number limit
+  }
 
-    class Feature {
-        -String icon
-        -String description
-    }
+  class Feature {
+    -String icon
+    -String description
+  }
 
-    class Card {
-        -String number
-        -Number limit
-    }
+  class Card {
+    -String number
+    -Number limit
+  }
 
-    class News {
-        -String icon
-        -String description
-    }
+  class News {
+    -String icon
+    -String description
+  }
 
-    User "1" *-- "1" Account
-    User "1" *-- "N" Feature
-    User "1" *-- "1" Card
-    User "1" *-- "N" News
+  User "1" *-- "1" Account
+  User "1" *-- "N" Feature
+  User "1" *-- "1" Card
+  User "1" *-- "N" News
+``` 
 
-Implementação do Backend
+**Implementação do Backend**
 
 - Spring Boot e Java 21
 
-Deploy e Monitoramento
+**Deploy e Monitoramento**
 
 - Railway (PostgreSQL e CI/CD da API)
-
-Desafio: Crie Sua Própria API
-
-- Explore um Novo Domínio de Aplicação a Sua Escolha
 
 ## Criação e Importação do Projeto
 
