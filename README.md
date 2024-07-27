@@ -1,7 +1,7 @@
 # santander-dev-week-2024
 Java RESTful API criada para a Santander Dev Week 2024
 
-## O que vamos desenvolver:  
+## Etapas:  
 
 Criação e Versionamento da API
 
@@ -10,6 +10,44 @@ Criação e Versionamento da API
 Abstração e Modelagem do Domínio
 
 - Figma, chatGPT (Mermand) e JPA
+
+    Diagrama de classes do projeto
+
+        classDiagram
+    class User {
+        -String name
+        -Account account
+        -Feature[] features
+        -Card card
+        -News[] news
+    }
+
+    class Account {
+        -String number
+        -String agency
+        -Number balance
+        -Number limit
+    }
+
+    class Feature {
+        -String icon
+        -String description
+    }
+
+    class Card {
+        -String number
+        -Number limit
+    }
+
+    class News {
+        -String icon
+        -String description
+    }
+
+    User "1" *-- "1" Account
+    User "1" *-- "N" Feature
+    User "1" *-- "1" Card
+    User "1" *-- "N" News
 
 Implementação do Backend
 
